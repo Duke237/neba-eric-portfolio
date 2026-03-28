@@ -1,13 +1,24 @@
 import React from 'react'
+import {
+  FaBehance,
+  FaDribbble,
+  FaFacebookF,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPinterestP,
+  FaXTwitter,
+} from 'react-icons/fa6'
 
 const socials = [
-  { icon: 'bi-twitter-x', label: 'X', href: '#' },
-  { icon: 'bi-linkedin', label: 'LinkedIn', href: '#' },
-  { icon: 'bi-behance', label: 'Behance', href: '#' },
-  { icon: 'bi-dribbble', label: 'Dribbble', href: '#' },
-  { icon: 'bi-facebook', label: 'Facebook', href: '#' },
-  { icon: 'bi-instagram', label: 'Instagram', href: '#' },
-  { icon: 'bi-pinterest', label: 'Pinterest', href: '#' },
+  { icon: FaXTwitter, label: 'X (Twitter)', href: 'https://x.com/' },
+  { icon: FaGithub, label: 'GitHub', href: 'https://github.com/' },
+  { icon: FaLinkedinIn, label: 'LinkedIn', href: 'https://www.linkedin.com/' },
+  { icon: FaBehance, label: 'Behance', href: 'https://www.behance.net/' },
+  { icon: FaDribbble, label: 'Dribbble', href: 'https://dribbble.com/' },
+  { icon: FaFacebookF, label: 'Facebook', href: 'https://www.facebook.com/' },
+  { icon: FaInstagram, label: 'Instagram', href: 'https://www.instagram.com/' },
+  { icon: FaPinterestP, label: 'Pinterest', href: 'https://www.pinterest.com/' },
 ]
 
 export default function Footer({ navGroups, onNavigate }) {
@@ -39,8 +50,14 @@ export default function Footer({ navGroups, onNavigate }) {
 
         <div className="footer-socials">
           {socials.map((social) => (
-            <a aria-label={social.label} href={social.href} key={social.label}>
-              <i className={`bi ${social.icon}`}></i>
+            <a
+              aria-label={social.label}
+              href={social.href}
+              key={social.label}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <social.icon />
             </a>
           ))}
         </div>
