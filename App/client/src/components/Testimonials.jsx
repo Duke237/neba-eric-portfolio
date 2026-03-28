@@ -183,7 +183,7 @@ const testimonials = [
   },
 ]
 
-const AUTO_SCROLL_STEP = 0.45
+const AUTO_SCROLL_STEP = 0.75
 
 const TestimonialCard = memo(function TestimonialCard({ item }) {
   return (
