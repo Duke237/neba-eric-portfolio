@@ -42,7 +42,7 @@ export default function Hero() {
               className="profile-photo"
               alt="Neba Eric portrait"
               decoding="async"
-              fetchPriority="high"
+              fetchpriority="high"
               height="2156"
               width="1992"
               src="/hero.png"

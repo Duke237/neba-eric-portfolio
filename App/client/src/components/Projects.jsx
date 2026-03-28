@@ -52,15 +52,22 @@ const projects = [
 ]
 
 const ProjectCard = memo(function ProjectCard({ project }) {
+  const [imgSrc, setImgSrc] = React.useState(project.image)
+
+  const handleError = () => {
+    setImgSrc('/placeholder-profile.jpg')
+  }
+
   return (
     <article className="project-card">
       <img
         alt={project.title}
         className="project-media"
         decoding="async"
-        fetchPriority="low"
+        fetchpriority="low"
         loading="lazy"
-        src={project.image}
+        src={imgSrc}
+        onError={handleError}
       />
       <div className="project-copy">
         <span>{project.type}</span>
