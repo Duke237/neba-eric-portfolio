@@ -1,0 +1,17 @@
+{
+  "name": "eric-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for NEBA ERIC SUH with an Express backend and Vite React frontend.",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "npm run dev:server",
+    "dev:server": "node src/server.js",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "sync:assets": "npm --prefix client run copy-images",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.22.1"
+  }
+}

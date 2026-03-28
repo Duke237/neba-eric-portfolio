@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NEBA ERIC SUH — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topnav" id="topnav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="logo-circle">NE</div>
+        <div class="brand-text">
+          <div class="name">NEBA ERIC SUH</div>
+          <div class="subtitle">DUKE KENZO.DK</div>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn primary" href="#" download>Download CV</a>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <p class="greeting">Hi, I am</p>
+          <h2 class="hero-name">NEBA ERIC <span class="muted">(DUKE KENZO.DK)</span> SUH</h2>
+          <h1 class="headline">UI &amp; UX Designer</h1>
+          <div class="badge">4+ Years Experience</div>
+          <p class="lead">I craft clean and engaging interfaces focused on usability and visual clarity.</p>
+          <div class="hero-actions">
+            <button class="btn primary" id="hireBtn">Hire Me</button>
+            <a href="#projects" class="btn ghost">View Projects</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-wrap">
+            <div class="profile-ring">
+              <img class="profile-img" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='320'><rect width='100%' height='100%' fill='%23f6f6f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23ff7a00' font-size='24'>Profile</text></svg>" alt="profile">
+            </div>
+            <div class="socials">
+              <a href="#">FB</a>
+              <a href="#">TW</a>
+              <a href="#">IG</a>
+              <a href="#">LI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container two-col">
+        <div class="about-left">
+          <div class="avatar-ring"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><rect width='100%' height='100%' fill='%23f6f6f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23ff7a00' font-size='18'>Photo</text></svg>" alt="avatar"></div>
+        </div>
+        <div class="about-right">
+          <h2>About Me</h2>
+          <p>I design interfaces that are both beautiful and easy to use. I focus on clarity, accessibility and real user needs.</p>
+          <div class="skills">
+            <div class="skill">
+              <div class="label">Website Design</div>
+              <div class="bar"><div class="fill"></div></div>
+            </div>
+            <div class="skill">
+              <div class="label">App Design</div>
+              <div class="bar"><div class="fill" style="width:70%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="label">Graphic Design</div>
+              <div class="bar"><div class="fill" style="width:60%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid">
+          <article class="card">
+            <div class="icon">🎨</div>
+            <h3>UI/UX</h3>
+            <p>Design focused on usability and delight.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🖥️</div>
+            <h3>Web Design</h3>
+            <p>Responsive websites with clean structure.</p>
+          </article>
+          <article class="card">
+            <div class="icon">📱</div>
+            <h3>App Design</h3>
+            <p>Interface design for mobile experiences.</p>
+          </article>
+          <article class="card">
+            <div class="icon">✏️</div>
+            <h3>Graphic Design</h3>
+            <p>Visual assets and branding work.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="uiux">UI/UX</button>
+          <button class="filter" data-filter="web">Web Design</button>
+          <button class="filter" data-filter="app">App Design</button>
+          <button class="filter" data-filter="graphic">Graphic Design</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-cat="web">
+            <div class="thumb" style="background:#eee"></div>
+            <div class="meta"><span class="cat">Web Design</span><h4>Project One</h4></div>
+          </article>
+          <article class="project-card" data-cat="uiux">
+            <div class="thumb" style="background:#eee"></div>
+            <div class="meta"><span class="cat">UI/UX</span><h4>Project Two</h4></div>
+          </article>
+          <article class="project-card" data-cat="web">
+            <div class="thumb" style="background:#eee"></div>
+            <div class="meta"><span class="cat">Web Design</span><h4>Project Three</h4></div>
+          </article>
+          <article class="project-card" data-cat="app">
+            <div class="thumb" style="background:#eee"></div>
+            <div class="meta"><span class="cat">App Design</span><h4>Project Four</h4></div>
+          </article>
+          <article class="project-card" data-cat="graphic">
+            <div class="thumb" style="background:#eee"></div>
+            <div class="meta"><span class="cat">Graphic Design</span><h4>Project Five</h4></div>
+          </article>
+          <article class="project-card" data-cat="uiux">
+            <div class="thumb" style="background:#eee"></div>
+            <div class="meta"><span class="cat">UI/UX</span><h4>Project Six</h4></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide active">
+              <div class="t-card">
+                <div class="avatar">A</div>
+                <p class="quote">Great work—delivered ahead of schedule.</p>
+                <div class="who">Jane Doe — Marketing Director</div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="t-card">
+                <div class="avatar">B</div>
+                <p class="quote">Very thoughtful and user-centered.</p>
+                <div class="who">John Smith — Product Lead</div>
+              </div>
+            </div>
+          </div>
+          <div class="dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="cta">
+      <div class="container center">
+        <h2>Let’s Design Together</h2>
+        <p>Drop your email and I will get back to you shortly.</p>
+        <div class="cta-form">
+          <input type="email" id="email" placeholder="Your email">
+          <button class="btn primary" id="contactBtn">Contact Me</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container center">
+      <div class="logo-small">NE</div>
+      <nav class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="socials small">
+        <a href="#">X</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">TikTok</a>
+        <a href="#">Instagram</a>
+      </div>
+      <div class="copyright">© 2023 ERICUIUX All Rights Reserved, Inc.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
