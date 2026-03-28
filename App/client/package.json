@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "prebuild": "node scripts/copy-images.js",
     "preview": "vite preview",
-    "copy-images": "node scripts/copy-images.js",
-    "postinstall": "node scripts/copy-images.js"
+    "copy-images": "node scripts/copy-images.js"
+  },
+  "engines": {
+    "node": "20.x || 22.x"
   },
   "dependencies": {
     "react": "18.2.0",

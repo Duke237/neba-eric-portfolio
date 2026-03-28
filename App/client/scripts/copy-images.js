@@ -34,9 +34,13 @@ Object.entries(copyPlan).forEach(([destName, candidates]) => {
     return;
   }
 
-  const sourcePath = path.join(appImageDir, sourceName);
-  fs.copyFileSync(sourcePath, destPath);
-  console.log('copied', sourceName, '->', destName);
+  try {
+    const sourcePath = path.join(appImageDir, sourceName);
+    fs.copyFileSync(sourcePath, destPath);
+    console.log('copied', sourceName, '->', destName);
+  } catch (error) {
+    console.warn('copy failed for', destName, '-', error.message);
+  }
 });
 
 console.log('Done.');
